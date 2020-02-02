@@ -4,6 +4,12 @@
             "type": "java",
             "name": "CodeLens (Launch) - APrac",
             "request": "launch",
+            "mainClass": "APrac"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - APrac",
+            "request": "launch",
             "mainClass": "APrac",
             "projectName": "VisualStudioWorkspace_99692ded"
         }
