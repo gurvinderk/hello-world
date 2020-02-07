@@ -1,5 +1,5 @@
 public class APrac{  
     public static void main(String args[]){  
-     System.out.println("Hello Java 5");  
+     System.out.println("Hello Java 6");  
     }  
 } 
