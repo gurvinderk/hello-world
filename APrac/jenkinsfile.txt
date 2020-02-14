@@ -21,7 +21,7 @@ pipeline {
         }
          stage ("Create Patch"){
             steps {
-                    echo "Create Patch STEPS HERE"
+                    echo "Create Patch STEPS HERE."
                     sleep(10);
             }
         }
