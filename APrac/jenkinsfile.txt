@@ -24,13 +24,13 @@ pipeline {
          stage ("QA approve patch"){
             steps {
                     echo "QA approve patch STEPS HERE"
-                    input "QA Approval?"
+                    #input "QA Approval?"
             }
         }
          stage ("Production patch management approvals"){
             steps {
                     echo "Production patch management approvals STEPS HERE"
-                    input "Management Approval?"
+                    #input "Management Approval?"
             }
         }
          stage ("Deploy patch to production"){
