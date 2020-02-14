@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage ("set and display ENV"){
             steps {
-                    echo "set and display ENV STEPS HERE"
+                    echo "set and display ENV STEPS HERE."
                     sleep(10);
             }
         }
