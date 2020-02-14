@@ -29,14 +29,14 @@ pipeline {
             steps {
                     echo "QA approve patch STEPS HERE"
                     sleep(10);
-                    //input "QA Approval?"
+                    input "QA Approval?"
             }
         }
          stage ("Production patch management approvals"){
             steps {
                     echo "Production patch management approvals STEPS HERE"
                     sleep(10);
-                    //input "Management Approval?"
+                    input "Management Approval?"
             }
         }
          stage ("Deploy patch to production"){
