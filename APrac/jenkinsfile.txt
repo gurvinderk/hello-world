@@ -1,20 +1,39 @@
 pipeline {
     agent any
     stages{
-        stage ("compile stage"){
+        stage ("set and display ENV"){
             steps {
-                    bat 'mvn clean compile'
+                    echo "set and display ENV STEPS HERE"
             }
         }
-
-        stage ("Testing stage"){
+        stage ("Build EPS"){
             steps {
-                    bat 'mvn test'
+                    echo "Build EPS STEPS HERE"
             }
         }
-        stage ("Deployment stage"){
+        stage ("Publish downstream Build"){
             steps {
-                    bat 'mvn  deploy'
+                    echo "Publish downstream Build STEPS HERE"
+            }
+        }
+         stage ("Create Patch"){
+            steps {
+                    echo "Create Patch STEPS HERE"
+            }
+        }
+         stage ("QA approve patch"){
+            steps {
+                    echo "QA approve patch STEPS HERE"
+            }
+        }
+         stage ("Production patch management approvals"){
+            steps {
+                    echo "Production patch management approvals STEPS HERE"
+            }
+        }
+         stage ("Deploy patch to production"){
+            steps {
+                    echo "Deploy patch to production STEPS HERE"
             }
         }
     }
