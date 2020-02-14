@@ -24,6 +24,7 @@ pipeline {
          stage ("QA approve patch"){
             steps {
                     echo "QA approve patch STEPS HERE"
+                    input "QA Approval?"
             }
         }
          stage ("Production patch management approvals"){
