@@ -30,6 +30,7 @@ pipeline {
          stage ("Production patch management approvals"){
             steps {
                     echo "Production patch management approvals STEPS HERE"
+                    input "Management Approval?"
             }
         }
          stage ("Deploy patch to production"){
