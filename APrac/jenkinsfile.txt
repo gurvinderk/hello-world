@@ -10,33 +10,39 @@ pipeline {
         stage ("Build EPS"){
             steps {
                     echo "Build EPS STEPS HERE"
+                    sleep(10);
             }
         }
         stage ("Publish downstream Build"){
             steps {
                     echo "Publish downstream Build STEPS HERE"
+                    sleep(10);
             }
         }
          stage ("Create Patch"){
             steps {
                     echo "Create Patch STEPS HERE"
+                    sleep(10);
             }
         }
          stage ("QA approve patch"){
             steps {
                     echo "QA approve patch STEPS HERE"
+                    sleep(10);
                     //input "QA Approval?"
             }
         }
          stage ("Production patch management approvals"){
             steps {
                     echo "Production patch management approvals STEPS HERE"
+                    sleep(10);
                     //input "Management Approval?"
             }
         }
          stage ("Deploy patch to production"){
             steps {
                     echo "Deploy patch to production STEPS HERE"
+                    sleep(10);
             }
         }
     }
