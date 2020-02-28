@@ -42,7 +42,7 @@ pipeline {
          stage ("Deploy patch to production"){
             steps {
                     echo "Deploy patch to production STEPS HERE"
-                    sleep(11);
+                    sleep(10);
             }
         }
     }
